@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <style>
+        .fontText{
+            z-index: 500;
+            width: 95%;
+            height: 285px;
+            position: fixed;
+            background-color: #ffffff;
+            border-color: #999999;
+            border-width: 5px;
+            border-radius: 15px;
+            color:	#842B00;
+            resize: none;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            font-size: 25px;
+        }
+        .UIGroup{
+            z-index: 110;
+            padding: 10px;
+            margin: 5px;
+            width: 22%;
+            height: fit-content;
+            background-color: #edebe5;
+            border-radius: 10px;
+        }
+        .nameRect{
+            z-index: 120;
+            padding: 3px;
+            width: 80%;
+            height: fit-content;
+            color: 	#000000;
+            background-color: #A3D1D1;
+            border-radius: 6px;
+        }
+        .UIContainer{
+            position: relative;
+            top: 300px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 100;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            width: 90%;
+            height: fit-content;
+            padding: 15px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: 	#FFFAF4;
+            background-color: #CDCD9A;
+            color:#000000;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>字型展示</title>
+    </head>
+    <body bgcolor=	#FFFAF4>
+        <textarea id="demoText" class="fontText"></textarea>
+        <div id="UIContainer" class="UIContainer">
+            <div style="width: 100%;"></div>
+        </div>
+        
+    </body>
+    <script src = "./dist/index.js" type="module"></script>
+</html>
