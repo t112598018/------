@@ -18,7 +18,7 @@ function buildUI() {
             continue;
         var studentName = currentData[0];
         var studentId = currentData[1];
-        var fontUrl = "./ttf/Font_"+currentData[1]+".ttf";
+        var fontUrl = "./ttf/"+currentData[1]+".ttf";
         var group = document.createElement("div");
         var textContent = document.createElement("div");
         var nameText = document.createElement("div");
